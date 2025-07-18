@@ -1,7 +1,7 @@
 module countbcd_circuit(
     input clk,
     input reset,   // Synchronous active-high reset
-    output [3:1] ena,
+    output reg [3:1] ena,
     output reg [15:0] q
 );
     always @(posedge clk) begin
