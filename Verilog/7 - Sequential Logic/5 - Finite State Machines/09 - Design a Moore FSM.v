@@ -2,10 +2,10 @@ module moorefsm_circuit(
    input clk,
    input reset,
    input [3:1] s,
-   output fr3,
-   output fr2,
-   output fr1,
-   output dfr
+   output reg fr3,
+   output reg fr2,
+   output reg fr1,
+   output reg dfr
 ); 
    parameter A=0, B1=1, B2=2, C1=3, C2=4, D=5;
    reg [3:1] state, next;

@@ -1,7 +1,7 @@
 module fsmonehot_circuit(
    input in,
    input [9:0] state,
-   output reg [9:0] next_state,
+   output [9:0] next_state,
    output out1,
    output out2
 );

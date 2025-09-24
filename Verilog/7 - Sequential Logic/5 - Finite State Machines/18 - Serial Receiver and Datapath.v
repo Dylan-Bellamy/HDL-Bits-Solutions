@@ -2,7 +2,7 @@ module fsmserialdata_circuit(
    input clk,
    input in,
    input reset,    // Synchronous reset
-   output [7:0] out_byte,
+   output reg [7:0] out_byte,
    output done
 );
    parameter Wait = 0, Bit1 = 1, Bit2 = 2, Bit3 = 3, Bit4 = 4, 

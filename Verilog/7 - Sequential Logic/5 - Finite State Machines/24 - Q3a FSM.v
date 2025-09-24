@@ -3,7 +3,7 @@ module q3afsm_circuit(
    input reset,   // Synchronous reset
    input s,
    input w,
-	output reg z
+	output z
 );
 	parameter A = 0, B = 1;
 	reg state, next;

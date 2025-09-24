@@ -11,7 +11,7 @@ module lemmings3_circuit(
    output digging 
 ); 
 	parameter LEFT = 2'b0, RIGHT = 2'b1, FALL_L = 2'b10, DIG_L = 2'b11, FALL_R = 3'b100, DIG_R = 3'b101;
-	reg [2:0] state, next_state, walk_state;
+	reg [2:0] state, next_state;
     
 	always @(*) begin
 		case (state) 
@@ -27,7 +27,6 @@ module lemmings3_circuit(
 	always @(posedge clk or posedge areset) begin
 		if (areset) begin
 			state <= LEFT;
-			walk_state <= state;
 		end else begin
 			state <= next_state;
 		end
